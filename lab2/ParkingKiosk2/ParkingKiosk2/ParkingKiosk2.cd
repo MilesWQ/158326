@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ParkingKiosk2.GeneralParkingKiosk">
+    <Position X="3.5" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgCAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>GeneralParkingKiosk.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParkingKiosk2.StaffParkingKiosk">
+    <Position X="6.5" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAIAAAAAEAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>StaffParkingKiosk.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParkingKiosk2.StudentParkingKiosk">
+    <Position X="9.25" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAEAAAAAAAAg=</HashCode>
+      <FileName>StudentParkingKiosk.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParkingKiosk2.GenKioskWrap">
+    <Position X="4" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACQAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GenKioskWrap.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ParkingKiosk2.StaffKioskWrap">
+    <Position X="6.75" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAECAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StaffKioskWrap.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ParkingKiosk2.StudKioskWrap">
+    <Position X="9.5" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAABAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>StudKioskWrap.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="ParkingKiosk2.IKiosk">
+    <Position X="1.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>IKiosk.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ParkingKiosk2.ParkType">
+    <Position X="1.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAACAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ParkType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

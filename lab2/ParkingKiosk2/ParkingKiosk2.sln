@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingKiosk2", "ParkingKiosk2\ParkingKiosk2.csproj", "{D5520E35-1BE2-40DD-8EAA-8F6BB2A54659}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5520E35-1BE2-40DD-8EAA-8F6BB2A54659}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5520E35-1BE2-40DD-8EAA-8F6BB2A54659}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5520E35-1BE2-40DD-8EAA-8F6BB2A54659}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5520E35-1BE2-40DD-8EAA-8F6BB2A54659}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7512DD0A-F166-4296-B398-EDF233C15AC5}
+	EndGlobalSection
+EndGlobal
