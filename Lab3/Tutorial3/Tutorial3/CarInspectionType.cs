@@ -8,6 +8,7 @@ namespace Tutorial3
     public class CarInspectionType : IServiceType
     {
         private CarInspection _carInspection;
+        
 
         public CarInspectionType() { }
 

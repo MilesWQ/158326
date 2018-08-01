@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="Tutorial3.TestStation">
-    <Position X="3.5" Y="2" Width="2" />
+    <Position X="2" Y="2" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAACCAAAAAAAAAAAAAAQAAgACAAgCAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAACCAAAAACAAAAAAAAQAAgACAAgCAAAAIAAAAAA=</HashCode>
       <FileName>TestStation.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Tutorial3.VTNZ">
-    <Position X="6.5" Y="2.5" Width="1.5" />
+    <Position X="6.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAACCAAAAAAAAQAAAAAAEIAAAQAAAAAAAAAAAAAAA=</HashCode>
       <FileName>VTNZ.cs</FileName>
@@ -18,22 +18,23 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Tutorial3.CarInspectionType">
-    <Position X="8.25" Y="5.75" Width="2" />
+    <Position X="9" Y="5" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAAAABAAAAAAAAAAAAQACAAAAAAAAAAAA=</HashCode>
       <FileName>CarInspectionType.cs</FileName>
+      <NewMemberFileName>CarInspection.cs</NewMemberFileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Tutorial3.CarInspection">
-    <Position X="11" Y="5.75" Width="2.5" />
+    <Position X="9" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AgAAAAAAAQAAAAAQAAAAAAAAAAAAQAAAAAACAAAAAAA=</HashCode>
       <FileName>CarInspection.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="Tutorial3.IServiceType">
-    <Position X="9.5" Y="2.75" Width="1.5" />
+    <Position X="9.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAACAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
       <FileName>IServiceType.cs</FileName>
