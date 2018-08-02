@@ -8,11 +8,12 @@ namespace Tutorial3
     public class VTNZ : TestStation
     {
         private IServiceType _service;
-        private int _requestNumber;
+        private static int _requestNumber = 0;
+        private static decimal _totalPrice = 0M;
 
         public VTNZ() { }
 
-        public VTNZ(string Name, string Address,string Tel,string OpenTime)
+        public VTNZ(string Name, string Address, string Tel, string OpenTime)
         {
             this.Name = Name;
             this.Address = Address;
@@ -29,7 +30,7 @@ namespace Tutorial3
             }
         }
 
-        public int TotalRequest
+        public static int TotalRequest
         {
             get
             {
@@ -37,10 +38,19 @@ namespace Tutorial3
             }
         }
 
+        public static decimal TotalPrice
+        {
+            get
+            {
+                return _totalPrice;
+            }
+        }
+
         public void RequestService(IServiceType service)
         {
             this._service = service;
             ++_requestNumber;
+            _totalPrice += _service.Price;
         }
 
         public string ShowServiceDetail()
@@ -50,7 +60,7 @@ namespace Tutorial3
 
         public override string ShowStationDetail()
         {
-            return "Station name:" + z_registeredName + "\nAddress:" + z_address + "\nTel:" + z_telNumber+"\n"+z_businessTime;
+            return "Station name:" + z_registeredName + "\nAddress:" + z_address + "\nTel:" + z_telNumber + "\n" + z_businessTime;
         }
     }
 }

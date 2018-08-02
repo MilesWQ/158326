@@ -14,7 +14,6 @@ namespace Tutorial3
     {
         private VTNZ _vtnz;
         private List<IServiceType> _serviceList;
-        decimal totalPrice;
 
         public Form1()
         {
@@ -74,9 +73,8 @@ namespace Tutorial3
                 }
                 _vtnz.RequestService(selectedService);
                 lblRequestDetails.Text += "Inspection Type " + _vtnz.ShowServiceDetail();
-                lblNumberOfRequest.Text = _vtnz.TotalRequest.ToString();
-                totalPrice +=_vtnz.IServiceType.Price;
-                lblTotalPrice.Text = totalPrice.ToString();
+                lblNumberOfRequest.Text = VTNZ.TotalRequest.ToString();
+                lblTotalPrice.Text = VTNZ.TotalPrice.ToString();
             }
             
         }

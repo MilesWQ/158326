@@ -9,7 +9,6 @@ namespace Tutorial3
     {
         private CarInspection _carInspection;
         
-
         public CarInspectionType() { }
 
         public CarInspectionType(string ServiceName,decimal Price)

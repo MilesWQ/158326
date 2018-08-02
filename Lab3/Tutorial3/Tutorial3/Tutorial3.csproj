@@ -54,11 +54,9 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="IServiceType.cs" />
-    <Compile Include="OtherInspection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestStation.cs" />
-    <Compile Include="TruckInspection.cs" />
     <Compile Include="VTNZ.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
