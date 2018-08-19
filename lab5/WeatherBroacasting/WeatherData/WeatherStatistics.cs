@@ -35,6 +35,10 @@ namespace WeatherBroadcast
 
         public void Update(float temp, float humidity, int pressure)
         {
+            if (_countUpdate == 0)
+            {
+                _mintemp = _maxtemp = temp;
+            }
             ++_countUpdate;
             if (temp > _maxtemp)
             {
@@ -46,11 +50,6 @@ namespace WeatherBroadcast
             }
             _avgtemp = (_sumtemp += temp) / _countUpdate;
             Display();
-        }
-
-        public void UpdatePull()
-        {
-
         }
 
         private void register_Click(object sender, EventArgs e)
