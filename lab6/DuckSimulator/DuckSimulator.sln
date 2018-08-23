@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2006
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuckSimulatorLibrary", "DuckSimulatorLibrary\DuckSimulatorLibrary.csproj", "{3A0458EB-649B-4A05-8C44-15177F21F68D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyBehaviourLibrary", "FlyBehaviourLibrary\FlyBehaviourLibrary.csproj", "{F7836991-BA1F-4C80-8E36-064D0B9DDB87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuackBehaviourLibrary", "QuackBehaviourlibrary\QuackBehaviourLibrary.csproj", "{9E86CD0C-2D8D-46EF-A9B3-56E55C9471E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuckSimulatorForm", "DuckSimulatorForm\DuckSimulatorForm.csproj", "{C8F9396D-B645-4399-86DD-990459A5C248}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A0458EB-649B-4A05-8C44-15177F21F68D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A0458EB-649B-4A05-8C44-15177F21F68D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A0458EB-649B-4A05-8C44-15177F21F68D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A0458EB-649B-4A05-8C44-15177F21F68D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7836991-BA1F-4C80-8E36-064D0B9DDB87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7836991-BA1F-4C80-8E36-064D0B9DDB87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7836991-BA1F-4C80-8E36-064D0B9DDB87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7836991-BA1F-4C80-8E36-064D0B9DDB87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E86CD0C-2D8D-46EF-A9B3-56E55C9471E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E86CD0C-2D8D-46EF-A9B3-56E55C9471E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E86CD0C-2D8D-46EF-A9B3-56E55C9471E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E86CD0C-2D8D-46EF-A9B3-56E55C9471E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8F9396D-B645-4399-86DD-990459A5C248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8F9396D-B645-4399-86DD-990459A5C248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8F9396D-B645-4399-86DD-990459A5C248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F9396D-B645-4399-86DD-990459A5C248}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {052C01E4-EDAE-4C35-BAA3-F2DEA9CF1194}
+	EndGlobalSection
+EndGlobal
