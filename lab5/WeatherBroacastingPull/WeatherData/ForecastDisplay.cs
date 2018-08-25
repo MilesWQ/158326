@@ -13,12 +13,10 @@ namespace WeatherBroadcast
 {
     public partial class ForecastDisplay : Form, IObserver, IDisplayElement
     {
-        private WeatherData _weatherData;
         private int _pressure;
-        public ForecastDisplay(WeatherData weatherData)
+        public ForecastDisplay()
         {
             InitializeComponent();
-            this._weatherData = weatherData;
         }
 
         public void Display()
@@ -42,19 +40,19 @@ namespace WeatherBroadcast
 
         public void UpdatePull()
         {
-            Update(0, 0, _weatherData.Pressure);
+            Update(0, 0, WeatherDataStation.weatherData.Pressure);
         }
 
         private void register_Click(object sender, EventArgs e)
         {
             btnRegister.Enabled = false;
-            _weatherData.RegisterObserver(this);
+            WeatherDataStation.weatherData.RegisterObserver(this);
         }
 
         private void unsubscribe_Click(object sender, EventArgs e)
         {
             btnRegister.Enabled = true;
-            _weatherData.RemoveObserver(this);
+            WeatherDataStation.weatherData.RemoveObserver(this);
         }
     }
 }

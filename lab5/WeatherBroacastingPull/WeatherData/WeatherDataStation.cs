@@ -13,44 +13,44 @@ namespace WeatherBroadcast
 {
     public partial class WeatherDataStation : Form
     {
-        private static WeatherData _weatherData;
+        public static WeatherData weatherData;
         public WeatherDataStation()
         {
-            _weatherData = new WeatherData();
+            weatherData = new WeatherData();
             InitializeComponent();
-            CurrentConditionsDisplay currentConditionDisplay = new CurrentConditionsDisplay(_weatherData);
+            CurrentConditionsDisplay currentConditionDisplay = new CurrentConditionsDisplay();
             currentConditionDisplay.Show();
-            ForecastDisplay forecastDisplay = new ForecastDisplay(_weatherData);
+            ForecastDisplay forecastDisplay = new ForecastDisplay();
             forecastDisplay.Show();
-            WeatherStatistics weatherStatistics = new WeatherStatistics(_weatherData);
+            WeatherStatistics weatherStatistics = new WeatherStatistics();
             weatherStatistics.Show();
         }
 
         public void NotifyObservers()
         {
-            _weatherData.NotifyObservers();
+            weatherData.NotifyObservers();
         }
 
         public void RegisterObserver(IObserver observer)
         {
-            _weatherData.RegisterObserver(observer);
+            weatherData.RegisterObserver(observer);
         }
 
         public void RemoveObserver(IObserver observer)
         {
-            _weatherData.RemoveObserver(observer);
+            weatherData.RemoveObserver(observer);
         }
 
         private void MeasurementChanged()
         {
             float result = 0;
             float.TryParse(textBoxTemp.Text, out result);
-             _weatherData.Temp = result;
+             weatherData.Temp = result;
             float.TryParse(textBoxHumidity.Text, out result);
-            _weatherData.Humidity = result;
+            weatherData.Humidity = result;
             int pressure = 0;
             Int32.TryParse(textBoxPressure.Text, out pressure);
-            _weatherData.Pressure = pressure;
+            weatherData.Pressure = pressure;
             NotifyObservers();
         }
 

@@ -13,16 +13,14 @@ namespace WeatherBroadcast
 {
     public partial class WeatherStatistics : Form, IObserver, IDisplayElement
     {
-        private WeatherData _weatherData;
         private float _mintemp;
         private float _maxtemp;
         private float _avgtemp;
         private float _sumtemp;
         private int _countUpdate;
-        public WeatherStatistics(WeatherData weatherData)
+        public WeatherStatistics()
         {
             InitializeComponent();
-            this._weatherData = weatherData;
         }
 
         public void Display()
@@ -54,20 +52,19 @@ namespace WeatherBroadcast
 
         public void UpdatePull()
         {
-            float temp = _weatherData.Temp;
-            Update(temp, 0, 0);
+            Update(WeatherDataStation.weatherData.Temp, 0, 0);
         }
 
         private void register_Click(object sender, EventArgs e)
         {
             btnRegister.Enabled = false;
-            _weatherData.RegisterObserver(this);
+            WeatherDataStation.weatherData.RegisterObserver(this);
         }
 
         private void unsubscribe_Click(object sender, EventArgs e)
         {
             btnRegister.Enabled = true;
-            _weatherData.RemoveObserver(this);
+            WeatherDataStation.weatherData.RemoveObserver(this);
         }
     }
 }

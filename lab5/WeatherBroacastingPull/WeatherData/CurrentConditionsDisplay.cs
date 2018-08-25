@@ -13,14 +13,12 @@ namespace WeatherBroadcast
 {
     public partial class CurrentConditionsDisplay : Form, IObserver, IDisplayElement
     {
-        private WeatherData _weatherData;
         private float _temp;
         private float _humidity;
         private int _pressure;
-        public CurrentConditionsDisplay(WeatherData weatherData)
+        public CurrentConditionsDisplay()
         {
             InitializeComponent();
-            this._weatherData = weatherData;
         }
 
         public void Display()
@@ -40,19 +38,19 @@ namespace WeatherBroadcast
 
         public void UpdatePull()
         {
-            Update(_weatherData.Temp, _weatherData.Humidity, _weatherData.Pressure);
+            Update(WeatherDataStation.weatherData.Temp, WeatherDataStation.weatherData.Humidity, WeatherDataStation.weatherData.Pressure);
         }
 
         private void register_Click(object sender, EventArgs e)
         {
             btnRegister.Enabled = false;
-            _weatherData.RegisterObserver(this);
+            WeatherDataStation.weatherData.RegisterObserver(this);
         }
 
         private void unsubscribe_Click(object sender, EventArgs e)
         {
             btnRegister.Enabled = true;
-            _weatherData.RemoveObserver(this);
+            WeatherDataStation.weatherData.RemoveObserver(this);
         }
     }
 }
