@@ -47,5 +47,8 @@ namespace SimpleFactoryForm
             lblOrder.Text = myPizza.ShowDetails();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

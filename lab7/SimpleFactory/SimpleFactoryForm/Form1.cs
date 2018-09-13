@@ -19,7 +19,7 @@ namespace SimpleFactoryForm
         public Form1()
         {
             _store = PizzaStore.GetInstance(new SimplePizzaFactory());
-            newForm = new HomeDelivery();
+            
             InitializeComponent();
         }
 
@@ -50,7 +50,11 @@ namespace SimpleFactoryForm
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            newForm = new HomeDelivery();
             newForm.Show();
+            newForm = null;
+            this.Show();
         }
     }
 }

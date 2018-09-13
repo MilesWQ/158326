@@ -32,6 +32,7 @@
             this.listPizza = new System.Windows.Forms.ListBox();
             this.lblOrder = new System.Windows.Forms.Label();
             this.btnOrder = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -71,11 +72,22 @@
             this.btnOrder.UseVisualStyleBackColor = true;
             this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(486, 277);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // HomeDelivery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 354);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnOrder);
             this.Controls.Add(this.lblOrder);
             this.Controls.Add(this.listPizza);
@@ -94,6 +106,7 @@
         private System.Windows.Forms.ListBox listPizza;
         private System.Windows.Forms.Label lblOrder;
         private System.Windows.Forms.Button btnOrder;
+        private System.Windows.Forms.Button button1;
     }
 }
 
