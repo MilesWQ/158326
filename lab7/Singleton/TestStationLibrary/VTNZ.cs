@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestStationLibrary
 {
-    public class VTNZ : TestStation
+    public sealed class VTNZ : TestStation
     {
         private static VTNZ _vtnz;
         private IServiceType _service;

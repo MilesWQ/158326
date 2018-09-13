@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestStationLibrary
 {
-    class CarInspectionType: IServiceType
+    public class CarInspectionType: IServiceType
     {
         private CarInspection _carInspection;
 
