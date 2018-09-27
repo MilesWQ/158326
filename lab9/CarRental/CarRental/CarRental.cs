@@ -8,19 +8,30 @@ namespace CarRentalLibrary
 {
     public class CarRental
     {
-        private const decimal HATCHBACK_FEE_RATE = 50;
-        private const decimal SEDAN_FEE_RATE = 80;
-        private const decimal CONVERTIBLE_FEE_RATE = 100;
-        private const decimal SALOON_FEE_RATE = 120;
- 
+        private const decimal DISCOUNT_10 = 0.1M;
+        private const decimal DISCOUNT_15 = 0.15M;
+        private const decimal DISCOUNT_20 = 0.2M;
+        
         public decimal GetPrice(int day, FeeRate feeRate)
         {
             if (day < 1)
             {
                 return 0;
             }
-
-            return day *(decimal)feeRate;
+            decimal total = day * (decimal)feeRate;
+            if (day >= 20)
+            {
+                return total * (1 - DISCOUNT_20);
+            }
+            else if (day >= 10 & day < 20)
+            {
+                return total * (1 - DISCOUNT_15);
+            }
+            else if (day >= 5 && day < 10)
+            {
+                return total * (1 - DISCOUNT_10);
+            }
+            return total;
         }
     }
 }
